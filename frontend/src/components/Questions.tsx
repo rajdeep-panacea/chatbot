@@ -6,14 +6,15 @@ interface Question {
 }
 
 const questions: Question[] = [
-    { id: 1, text: "Do you regularly update the firmware on your networking devices?" },
-    { id: 2, text: "Have you configured a firewall on your network to prevent unauthorized access?" },
-    { id: 3, text: "Do you use WPA3 encryption for your Wi-Fi network?" },
-    { id: 4, text: "Are all your networking devices (routers, switches, etc.) protected with strong passwords?" },
-    { id: 5, text: "Have you set up VLANs (Virtual Local Area Networks) to segment network traffic?" },
-    { id: 6, text: "Do you use a VPN (Virtual Private Network) when accessing your network remotely?" },
-    { id: 7, text: "Have you disabled unused ports on your network switches to prevent unauthorized access?" },
-    { id: 8, text: "Have you configured QoS (Quality of Service) on your network to prioritize critical traffic?" }
+    { id: 1, text: "Firmware on networking devices is not updated regularly." },
+    { id: 2, text: "Firewall is not configured to prevent unauthorized access." },
+    { id: 3, text: "Wi-Fi network does not use WPA3 encryption." },
+    { id: 4, text: "Networking devices are not protected with strong passwords." },
+    { id: 5, text: "VLANs (Virtual Local Area Networks) are not set up to segment network traffic." },
+    { id: 6, text: "VPN (Virtual Private Network) is not used for remote access to the network." },
+    { id: 7, text: "Unused ports on network switches are not disabled to prevent unauthorized access." },
+    { id: 8, text: "QoS (Quality of Service) is not configured to prioritize critical traffic." }
+
   ];
 
 const Questions: React.FC = () => {
@@ -28,7 +29,7 @@ const Questions: React.FC = () => {
 
   return (
     <div className="mx-auto pt-6 pl-6 -mr-[400px] bg-white">
-      <h2 className="text-2xl font-bold mb-4">Checklist</h2>
+      <h2 className="text-2xl font-bold mb-4">Remediation</h2>
       <ul className="space-y-4 w-1/2">
         {questions.map((question) => (
           <li key={question.id} className="flex items-center">
